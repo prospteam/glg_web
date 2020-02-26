@@ -34,8 +34,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://glgfreight.com/loadboard/';
+// $config['base_url'] = 'https://glgfreight.com/loadboard/';
 
+$test = true;
+if($test){
+  $config['base_url'] = 'http://192.168.20.29/Projects/globallogisticsgroup/Loadboard_Website/loadboard/';
+}else{
+  $config['base_url'] = 'https://glgfreight.com/loadboard/';
+}
 /*
 |--------------------------------------------------------------------------
 | Index File

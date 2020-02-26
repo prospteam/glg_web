@@ -5,6 +5,14 @@ class MY_Controller extends MX_Controller {
 		public function __construct(){
 			parent::__construct();
 
+			$test = true;
+			if($test){
+				$config['base_url'] = 'http://192.168.20.29/Projects/globallogisticsgroup/Loadboard_Website/loadboard/';
+			}else{
+				$config['base_url'] = 'https://glgfreight.com/loadboard/';
+			}
+
+			
 			if(empty($this->session->userdata('user_session'))){
 				if (!($this->router->fetch_class()=="login" || $this->router->fetch_class()=="api")) {
 					redirect('login');
