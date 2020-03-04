@@ -39,6 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $test = true;
 if($test){
   $config['base_url'] = 'http://192.168.20.29/Projects/globallogisticsgroup/Loadboard_Website/loadboard/';
+  // $config['base_url'] = 'http://localhost/Projects/globallogisticsgroup/Loadboard_Website/loadboard/';
 }else{
   $config['base_url'] = 'https://glgfreight.com/loadboard/';
 }
